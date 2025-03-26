@@ -7,6 +7,85 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-/* Add styles here! */
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+header {
+  padding-top: 96px;
+  padding-bottom: 64px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 8px solid hsl(0deg, 0%, 80%);
+}
+
+.intro-chunk {
+  max-width: 40%;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%)
+}
+
+main {
+  padding: 64px 0;
+  background-color: hsl(0deg, 0%, 60%);
+  min-height: 100%;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.card {
+  border-bottom: 8px solid hsl(0deg, 0%, 80%);
+  padding: 24px;
+}
+
+.max-width-wrapper>.card {
+  background-color: hsl(0deg, 0%, 100%);
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.indented-heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 16px 32px;
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  background-color: hsl(45deg, 100%, 50%);
+
+  max-width: fit-content;
+}
+
+.card>.indented-heading {
+  margin-left: -32px;
+  margin-right: -32px;
+  padding-left: 0 32px;
+  padding-right: 0 32px;
+
+  margin-top: -16px;
+  /* 16px */
+  margin-bottom: 1rem;
+}
